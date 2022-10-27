@@ -1,0 +1,176 @@
+body {
+  background-image: url('https://www.thisiscolossal.com/wp-content/uploads/2020/09/ghibli-9.jpg');
+  background-color: #0a280a;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.timeline ul li div img {
+  width: 20vw;
+  justify-content: flex-start;
+  object-fit: cover;
+}
+
+.timeline-text {
+  justify-content: flex-end;
+  margin: 15px;
+}
+
+
+/*Heading*/
+
+.timeline ul li h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+}
+/*Heading*/
+
+
+/*Date*/
+.timeline ul li h4 {
+  text-align: center;
+  font-family: 'Blinker', sans-serif;
+}
+/*Date*/
+
+
+/*Description*/
+.timeline ul li p {
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Blinker', sans-serif;
+}
+/*Description*/
+
+
+/* STYLES FÖR DATOR */
+@media all and (min-width: 1100px) {
+
+              /* udda list items sätts till vänster */
+            li:nth-child(odd) .timeline-content {
+              border-radius: 50px 0px 50px 50px; /* Sätter vilket hörn som inte ska vara avrundat */
+              left: 3vw;
+              width: 40vw;
+            }
+            /* jämna list items sätts till höger */
+            li:nth-child(even) .timeline-content {
+              border-radius: 0px 50px 50px 50px; /* Sätter vilket hörn som inte ska vara avrundat */
+              left: 50.5vw;
+              width: 40vw;
+            }
+            .vertical-line {
+              border-left: 16px solid #1e4f2e;
+              height: 100vw;
+              position: fixed;
+              left: 50%;
+              margin-left: -8px;
+              top: 0;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+         }
+        }
+
+
+/* STYLES FÖR STORLEKAR MELLAN DATOR OCH MOBIL */
+@media all and (max-width: 1100px) {
+            .timeline-content {
+              border-radius: 50px;
+              width: 90vw;
+            }
+        }
+
+
+/* STYLES FÖR MOBIL */
+@media all and (max-width: 590px) {
+            .timeline-content{
+              width: 100%;
+              flex-direction: column-reverse;
+            }
+
+            li{
+                left:0;
+                width: 100%;
+              }
+              .timeline ul li div img {
+                width: 100vw;
+                height: 20%;
+              }
+              .timeline-text{
+              }
+              ul{
+                left: -20px;
+                position: relative;
+                margin-top: -100px;
+              }
+          }
+
+
+.timeline {
+  margin-top: 150px;
+}
+
+/*  SCROLL ANIMATION */
+
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--animate {
+  transition: opacity 0.4s ease-in-out;
+}
+
+/*  SCROLL ANIMATION END */
+
+/*  BACKGROUND COLOURS */
+
+.purple{
+  background-color: #5C4988;
+  color: #ad93e8;
+}
+
+.red{
+  background-color: #8e2223;
+  color: #f69b9c;
+}
+
+.green{
+  background-color: #1e4f2e;
+  color: #afd0af;
+}
+
+.blue{
+  background-color: #222a54;
+  color: #7c8bd7;
+}
+
+.teal{
+  background-color: #174d49;
+  color: #69c1ba;
+}
+
+/*  BACKGROUND COLOURS END */

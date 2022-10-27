@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Studio Ghibli</title>
+  <link rel="icon" href="https://i.imgur.com/JpZmZuJ.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/moviepreview.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blinker&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- NAV + MUSIC -->
+
+  <div id="pagetop"></div>
+
+  <img id="icon" alt="music icon" src="img/quaver.png">
+
+  <nav>
+    <a href="index.html" class="navlink">Home</a>
+    <a href="filmography.html" class="navlink">Filmography</a>
+    <a href="timeline.html" class="navlink">Timeline</a>
+    <a href="about.html" class="navlink">About</a>
+  </nav>
+
+
+
+
+  <audio id="mySong" loop>
+    <source src="audio/pathofwind.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon"); // Musik-ikonen på sidan
+
+    icon.onclick = function(){
+      if(mySong.paused){ // Om man klickar och den är pausad, sätts musiken på
+        mySong.play();
+        icon.src = "img/quavercross.png"
+      }else{ // Om man klickar och den spelas, sätts musiken på
+        mySong.pause();
+        icon.src = "img/quaver.png"
+      }
+    }
+    </script>
+
+    <script src="js/startrail2.js"></script>     <!-- Trail på musen -->
+
+    <!-- NAV + MUSIC END -->
+
+    <img id="ghiblilogo" alt="Studio Ghibli Logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png">
+
+
+    <div class="container">
+
+      <!--IMAGES IN MOVIE PREVIEW-->
+      <div class="spiritedimage"><img class="movieimage" alt="Spirited Away" src="img/spiritedaway.png"></div>
+      <div class="howlsimage"><img class="movieimage" alt="Howl's Moving Castle" src="https://m.media-amazon.com/images/M/MV5BMTU1NTE5NjQ0OF5BMl5BanBnXkFtZTcwMzk1NzEyNw@@._V1_.jpg"></div>
+      <div class="totoroimage"><img class="movieimage" alt="My Neighbor Totoro" src="https://dazedimg-dazedgroup.netdna-ssl.com/1920/azure/dazed-prod/1180/1/1181603.jpg"></div>
+      <div class="kikiimage"><img class="movieimage" alt="Kiki's Delivery Service" src="https://lwlies.com/wp-content/uploads/2019/07/kikis-delivery-service-1108x0-c-default.jpg"></div>
+
+      <!--TEXT IN MOVIE PREVIEW-->
+      <div class="spiritedtext">
+        <h3>Spirited away</h3>
+        <p>Ten-year-old Chihiro and her parents end up at an abandoned amusement park inhabited by supernatural beings. After her mother and father are turned into giant pigs, Chihiro meets the mysterious Haku who explains that she must work there to free herself and her parents.</p>
+        <div class="trailerholder">
+          <a target="_blank" href="https://www.youtube.com/watch?v=ByXuk9QqQkk" class="watchtrailer">Watch Trailer</a>
+        </div>
+      </div>
+
+      <div class="howlstext">
+        <h3>Howl's moving castle</h3>
+        <p>Jealous of Sophie's closeness to Howl, a wizard, the Witch of Waste transforms her into an old lady. Sophie must find a way to break the spell with the help of Howl's friends, Calcifer and Markl, and return her to her former youth and beauty.</p>
+        <div class="trailerholder">
+          <a target="_blank" href="https://www.youtube.com/watch?v=iwROgK94zcM" class="watchtrailer">Watch Trailer</a>
+        </div>
+      </div>
+
+      <div class="totorotext">
+        <h3>My Neighbor Totoro</h3>
+        <p>Mei and Satsuki shift to a new house with their father as they wait for their mother to recover from an illness in an area hospital. As the sisters explore their new home, they encounter and befriend playful spirits in their house and the nearby forest.</p>
+        <div class="trailerholder">
+          <a target="_blank" href="https://www.youtube.com/watch?v=92a7Hj0ijLs" class="watchtrailer">Watch Trailer</a>
+        </div>
+      </div>
+
+      <div class="kikitext">
+        <h3>Kiki's delivery service</h3>
+        <p>Kiki and her talking cat Jiji move to a seaside town to spend a year alone, as tradition for witches in training. There, she sets up a flying courier service. But the insecure young witch begins questioning herself, and she must overcome her self-doubt to get her powers back.</p>
+        <div class="trailerholder">
+          <a target="_blank" href="https://www.youtube.com/watch?v=4bG17OYs-GA" class="watchtrailer">Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>
+        CONTACT
+        <br>
+        matilda.bergstrom@student.tabyenskilda.se
+        <br>
+        <a href="#pagetop"> Return to top </a>
+      </p>
+    </footer>
+
+    <!-- FOOTER -->
+
+  </body>
+
+</html>

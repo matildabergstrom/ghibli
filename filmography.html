@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Studio Ghibli</title>
+  <link rel="icon" href="https://i.imgur.com/JpZmZuJ.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/filmography.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blinker&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAV + MUSIC -->
+
+<div id="pagetop"></div>
+
+  <img id="icon" alt="music icon" src="img/quaver.png">
+
+    <nav>
+      <a href="index.html" class="navlink">Home</a>
+      <a href="filmography.html" class="navlink">Filmography</a>
+      <a href="timeline.html" class="navlink">Timeline</a>
+      <a href="about.html" class="navlink">About</a>
+    </nav>
+
+
+
+
+    <audio id="mySong" loop>
+      <source src="audio/pathofwind.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+          if(mySong.paused){
+             mySong.play();
+             icon.src = "img/quavercross.png"
+        }else{
+          mySong.pause();
+          icon.src = "img/quaver.png"
+        }
+      }
+
+    </script>
+
+    <script src="js/startrail2.js"></script>
+
+<!-- NAV + MUSIC END -->
+
+<div class="titlebar"><h1>FULL FILM COLLECTION</h1></div>
+
+<div class="films-container">
+  <div>
+    <a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank">
+    <img alt="Gif from movie" src="https://www.icegif.com/wp-content/uploads/2022/07/icegif-761.gif"> </a>
+    <h2>My Neighbor Totoro<br>
+    <small>"One of the most beloved of all family films" – Roger Ebert
+    <br>
+    8.1 / 10 IMDB
+    </small></h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank">
+    <img alt="Gif from movie" src="https://media.tenor.com/2fmVYnvLz2cAAAAC/movies-anime.gif"> </a>
+    <h2>Spirited Away<br>
+    <small>"Nothing less than magical!" – Joe Morgenstern
+    <br>
+    8.6 / 10 IMDB
+    </small></h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank">
+    <img alt="Gif from movie" src="https://www.icegif.com/wp-content/uploads/2021/10/icegif-521.gif"> </a>
+    <h2>Kiki's Delivery Service<br>
+    <small>"A beautifully animated, kindhearted gem" – Leonard Maltin
+    <br>
+    7.8 / 10 IMDB
+    </small></h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle" target="_blank">
+    <img alt="Gif from movie" src="https://64.media.tumblr.com/450c1ab79ff2d45232eeafcb8ab1f141/tumblr_nux93w3gM81tj0a58o1_500.gifv"> </a>
+    <h2>Howl's Moving Castle</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Ponyo" target="_blank">
+    <img alt="Gif from movie" src="https://c.tenor.com/IJ3zsdxeavAAAAAC/studio-ghibli-ponyo-on-the-cliff.gif"> </a>
+    <h2>Ponyo</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Princess_Mononoke" target="_blank">
+    <img alt="Gif from movie" src="https://media0.giphy.com/media/3o6Ztaj8KHCx07iFpK/giphy.gif?cid=790b7611eca336423975030b3fc127b988179084a6e4d765&rid=giphy.gif&ct=g"> </a>
+    <h2>Princess Mononoke</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Castle_in_the_Sky" target="_blank">
+    <img alt="Gif from movie" src="https://c.tenor.com/SQ-ehwkG98cAAAAC/castle-in-the-sky-castle.gif"> </a>
+    <h2>Castle in the Sky</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/grave_of_the_fireflies" target="_blank">
+    <img alt="Gif from movie" src="https://animesher.com/orig/1/122/1224/12240/animesher.com_animation-grave-of-the-fireflies-gif-1224052.gif"> </a>
+    <h2>Grave of the Fireflies</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Only_Yesterday_(1991_film)" target="_blank">
+    <img alt="Gif from movie" src="https://66.media.tumblr.com/1a677bc0a9332f7d4ddbf91ab65bf713/tumblr_okezmccXir1upe1ufo1_500.gif"> </a>
+    <h2>Only yesterday</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Porco_Rosso" target="_blank">
+    <img alt="Gif from movie" src="https://c.tenor.com/fMKPdCJ7S-IAAAAC/porco-rosso.gif"> </a>
+    <h2>Porco Rosso</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/When_Marnie_Was_There" target="_blank">
+    <img alt="Gif from movie" src="https://media.tenor.com/CRkkzLzVCpQAAAAC/when-marnie-was-there-marnie.gif"> </a>
+    <h2>When Marnie was There</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/The_wind_rises" target="_blank">
+    <img alt="Gif from movie" src="https://i.pinimg.com/originals/a9/a5/87/a9a587e9a577a5a09ee61397c0770c3c.gif"> </a>
+    <h2>The Wind Rises</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Ocean_Waves_(film)" target="_blank">
+    <img alt="Gif from movie" src="https://64.media.tumblr.com/335dad8307b4e1b23e8569b59a6c7d37/tumblr_oxfoivfbkC1w33ey9o3_540.gif"> </a>
+    <h2>Ocean Waves</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/From_up_on_Poppy_Hill" target="_blank">
+    <img alt="Gif from movie" src="https://i.pinimg.com/originals/ee/c1/f4/eec1f4406fc38108a54531adbed0ce47.gif"> </a>
+    <h2>From up on Poppy Hill</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/The_Cat_Returns" target="_blank">
+    <img alt="Gif from movie" src="https://64.media.tumblr.com/tumblr_lwgygnLLrK1qehmh1o1_500.gif"> </a>
+    <h2>The Cat Returns</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Nausica%C3%A4_of_the_Valley_of_the_Wind_(film)" target="_blank">
+    <img alt="Gif from movie" src="https://38.media.tumblr.com/13bb8efef6c6668be6b2b3473ad96ef5/tumblr_ngln38fBK81rey868o1_500.gif"> </a>
+    <h2>Nausicaä of the Valley of the Wind</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Pom_Poko" target="_blank">
+    <img alt="Gif from movie" src="https://64.media.tumblr.com/tumblr_mdv0apreOU1rtcnalo1_500.gif"> </a>
+    <h2>Pom Poko</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Tales_from_Earthsea_(film)#:~:text=Tales%20from%20Earthsea%20" target="_blank">
+    <img alt="Gif from movie" src="https://68.media.tumblr.com/1cd9e2603277c79690348e70a4c97247/tumblr_msrkjgnVBA1rll7syo1_500.gif"> </a>
+    <h2>Tales from Earthsea</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Arrietty" target="_blank">
+    <img alt="Gif from movie" src="https://i.pinimg.com/originals/46/42/bd/4642bd99bc6c1ce8d7dba75d72979226.gif"> </a>
+    <h2>Arrietty</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Whisper_of_the_Heart" target="_blank">
+    <img alt="Gif from movie" src="https://www.icegif.com/wp-content/uploads/2022/08/icegif-355.gif"> </a>
+    <h2>Whispers of the Heart</h2>
+  </div>
+
+  <div>
+    <a href="https://en.wikipedia.org/wiki/The_Tale_of_the_Princess_Kaguya_(film)" target="_blank">
+    <img alt="Gif from movie" src="https://i.pinimg.com/originals/22/b3/99/22b399835ed8c7187858c7250a049f79.gif"> </a>
+    <h2>The Tale of Princess Kaguya</h2>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  <p>
+    CONTACT
+    <br>
+    matilda.bergstrom@student.tabyenskilda.se
+    <br>
+    <a href="#pagetop"> Return to top </a>
+  </p>
+</footer>
+
+<!-- FOOTER -->
+
+</body>
+
+</html>

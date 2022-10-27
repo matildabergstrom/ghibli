@@ -1,0 +1,151 @@
+.container {
+
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  top: 100px;
+  height: 100%;
+  width: 43vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  grid-template-areas:
+  "st st st st st st st si si si si si"
+  "hi hi hi hi hi ht ht ht ht ht ht ht"
+  "tt tt tt tt tt tt tt ti ti ti ti ti"
+  "ki ki ki ki ki kt kt kt kt kt kt kt";
+}
+
+/* STYLES FÖR DATOR */
+
+@media all and (min-width: 1150px) {
+  .container {
+    width: 43vw;
+  }
+  #ghiblilogo {
+    width: 50vw;
+
+  }
+  h3 {
+    font-size: 1.6em;
+    margin: 20px;
+  }
+  p {
+    font-size: 1em;
+    margin: 15px;
+  }
+}
+
+/* STYLES FÖR MOBIL */
+
+@media all and (max-width: 1150px) {
+  .container {
+    width: 100vw;
+  }
+  #ghiblilogo {
+    width: 90vw;
+  }
+  h3 {
+    font-size: 1.4em;
+    margin: 5px;
+  }
+  p {
+    font-size: 0.9em;
+    margin: 4px;
+  }
+
+}
+
+
+
+/* GRID AREAS */
+
+.spiritedimage {
+  grid-area: si;
+}
+
+.spiritedtext {
+  grid-area: st;
+  background-color: #990001;
+  justify-content: center;
+}
+
+.howlsimage {
+  grid-area: hi;
+}
+
+.howlstext {
+  grid-area: ht;
+  background-color: #1C6894;
+  justify-content: center;
+}
+
+
+.totoroimage {
+  grid-area: ti;
+}
+
+.totorotext {
+  grid-area: tt;
+  background-color: #4e8754ff;
+  justify-content: center;
+}
+
+
+.kikiimage {
+  grid-area: ki;
+}
+
+.kikitext {
+  grid-area: kt;
+  background-color: #073763ff;
+  justify-content: center;
+}
+
+
+/* GRID AREAS END */
+
+.movieimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3{
+  color: white;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+
+
+p {
+  color:white;
+  font-family: 'Blinker', sans-serif;
+  text-align: center;
+}
+
+
+.watchtrailer{
+  font-size: 1em;
+  font-family: 'Blinker', sans-serif;
+  color: #14b50c;
+}
+
+.trailerholder{
+  text-align: center;
+}
+
+.watchtrailer:hover{
+  color:#fff;
+}
+
+#ghiblilogo{
+  margin-top: 30px;
+  filter: invert(100%);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

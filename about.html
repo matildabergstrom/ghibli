@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Studio Ghibli</title>
+  <link rel="icon" href="https://i.imgur.com/JpZmZuJ.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blinker&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAV + MUSIC -->
+
+<div id="pagetop"></div>
+
+  <img id="icon" alt="music icon" src="img/quaver.png">
+
+    <nav>
+      <a href="index.html" class="navlink">Home</a>
+      <a href="filmography.html" class="navlink">Filmography</a>
+      <a href="timeline.html" class="navlink">Timeline</a>
+      <a href="about.html" class="navlink">About</a>
+    </nav>
+
+
+
+
+    <audio id="mySong" loop>
+      <source src="audio/pathofwind.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+          if(mySong.paused){
+             mySong.play();
+             icon.src = "img/quavercross.png"
+        }else{
+          mySong.pause();
+          icon.src = "img/quaver.png"
+        }
+      }
+
+    </script>
+
+    <script src="js/startrail2.js"></script>
+
+<!-- NAV + MUSIC END -->
+
+<div class="titlebar"><h1>ABOUT STUDIO GHIBLI</h1></div>
+
+
+<div class="aboutcontainer">
+  <img src="https://assets-prd.ignimgs.com/2022/07/22/best-studio-ghibli-movies-thumbnail-1658448488868.jpg" alt="Studio ghibli movies">
+  <div class="abouttext">
+  <p>Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films.  Most Studio Ghibli films ranked number one at the box office in Japan in the year in which they were released.  SPIRITED AWAY, directed by Hayao Miyazaki and released in 2001, is the all-time highest grossing film in Japan, earning over 30 billion yen at the box office.
+
+Studio Ghibli films have garnered numerous awards and critical acclaim from film critics and animation specialists around the world.  SPIRITED AWAY was awarded the Golden Bear as the Best Feature Film at the 2002 Berlin International Film Festival and won the 2002 Academy Award for Best Animated Feature Film.  In October 2001, Studio Ghibli, in conjunction with The Tokuma Memorial Cultural Foundation for Animation, founded the Ghibli Museum, Mitaka, designed by Hayao Miyazaki.
+
+THE WIND RISES (2013), THE TALE OF THE PRINCESS KAGUYA (2013), WHEN MARNIE WAS THERE (2014) and THE RED TURTLE (2016), the last four films released by Studio Ghibli, have earned the studio four consecutive Academy Award nominations for Best Animated Feature Film.  The studio is currently working on a new production.</p>
+</div>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  <p>
+    CONTACT
+    <br>
+    matilda.bergstrom@student.tabyenskilda.se
+    <br>
+    <a href="#pagetop"> Return to top </a>
+  </p>
+</footer>
+
+<!-- FOOTER -->
+
+</body>
+
+</html>

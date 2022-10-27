@@ -1,0 +1,45 @@
+.films-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  margin: 10%;
+  margin-top: 110px;
+}
+
+.films-container div {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.films-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.films-container h2 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  line-height: 315%; /*Hög line height så att extra texten inte syns om texten inte har nog height*/
+  bottom: 0;
+  margin-bottom: 0;
+  color: white;
+  font-family: 'Blinker', sans-serif;
+  font-size: 1em;
+  -webkit-transition:0.3s;
+  background-color: rgba(20, 39, 80, 0.65);
+  height: 50px;
+  font-weight: 300;
+}
+
+
+.films-container h2:hover{
+  height: 50%; /*Ökar höjden på text rutan så att resten av h2 syns*/
+  -webkit-transition:0.3s;
+  background-color: rgba(20, 39, 80);
+}

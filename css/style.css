@@ -1,0 +1,134 @@
+body {
+  background-image: url('https://www.thisiscolossal.com/wp-content/uploads/2020/09/ghibli-9.jpg');
+  background-color: #0a1328;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  margin: 0px;
+  text-align: center;
+  background-color: #2d4556ff;
+  opacity: 80%;
+  position: sticky; /*Nav följer med i toppen när man skrollar*/
+  top: 0;
+  z-index: 10;
+}
+
+.navlink {
+  color:white;
+  text-decoration: none;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 25px;
+  -webkit-transition:0.3s;
+}
+
+.navlink:hover{
+  color:#93b2d9;
+  font-size:30px;
+}
+
+/* STYLES FÖR DATOR */
+@media all and (min-width: 650px) {
+  .navlink {
+    margin: 5%;
+  }
+  nav{
+    padding: 25px;
+  }
+}
+
+/* STYLES FÖR MOBIL */
+@media all and (max-width: 650px) {
+  .navlink {
+    margin: 100px;
+  }
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #0a1328;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: -10px;
+  z-index: 10;
+  color: #99bec1;
+  text-align: center;
+  font-family: 'Blinker', sans-serif;
+}
+
+footer a{
+  color: #4d6b99;
+}
+
+footer a:hover{
+  color: #7898cb;
+}
+
+#icon {
+  position: fixed;
+  width: 50px;
+  bottom: 0px;
+  right: 0px;
+  padding: 40px;
+  filter:invert(100%); /*Orginal bilden är svart*/
+  cursor: pointer;
+  z-index: 11;
+}
+
+.titlebar {
+  background-color: #213b53f7;
+  padding: 40px;
+  z-index: 9;
+  position: relative;
+}
+
+h1 {
+  color: #19707c;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+  h1 {
+    overflow: hidden; /* Ser till att texten inte visas tills animationen spelas */
+    white-space: nowrap; /* Håller texten på en rad */
+    margin: auto; /* Håller texten centrerad under animationen */
+    letter-spacing: 0.15em;
+    animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  }
+
+  /* STYLES FÖR MOBIL */
+  @media all and (max-width: 650px) {
+    h1{
+      letter-spacing: 0.015em;
+      left: 0;
+      animation:
+      typing 1s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }
+  }
+
+/* Själva animationen */
+
+@keyframes typing {
+  from { width: 0 } /* Gör textboxen bredare, och visar på så sätt mer och mer text (eftersom overflow är hidden)*/
+  to { width: 100% }
+}
+
+@keyframes typingmobile {
+  from { width: 0 } /* Gör textboxen bredare, och visar på så sätt mer och mer text (eftersom overflow är hidden)*/
+  to { width: 100% }
+}
+
+/* TYPING ANIMATION END */
