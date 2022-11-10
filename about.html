@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<!-- NAV + MUSIC -->
+<!-- NAV  -->
 
 <div id="pagetop"></div>
 
@@ -29,39 +29,13 @@
       <a href="about.html" class="navlink">About</a>
     </nav>
 
-
-
-
-    <audio id="mySong" loop>
-      <source src="audio/pathofwind.mp3" type="audio/mp3">
-    </audio>
-
-    <script>
-
-        var mySong = document.getElementById("mySong");
-        var icon = document.getElementById("icon");
-
-        icon.onclick = function(){
-          if(mySong.paused){
-             mySong.play();
-             icon.src = "img/quavercross.png"
-        }else{
-          mySong.pause();
-          icon.src = "img/quaver.png"
-        }
-      }
-
-    </script>
-
-    <script src="js/startrail2.js"></script>
-
-<!-- NAV + MUSIC END -->
+<!-- NAV  -->
 
 <div class="titlebar"><h1>ABOUT STUDIO GHIBLI</h1></div>
 
 
 <div class="aboutcontainer">
-  <img src="https://assets-prd.ignimgs.com/2022/07/22/best-studio-ghibli-movies-thumbnail-1658448488868.jpg" alt="Studio ghibli movies">
+  <img src="img/about.jpg" alt="Studio ghibli movie collage">
   <div class="abouttext">
   <p>Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films.  Most Studio Ghibli films ranked number one at the box office in Japan in the year in which they were released.  SPIRITED AWAY, directed by Hayao Miyazaki and released in 2001, is the all-time highest grossing film in Japan, earning over 30 billion yen at the box office.
 
@@ -77,13 +51,36 @@ THE WIND RISES (2013), THE TALE OF THE PRINCESS KAGUYA (2013), WHEN MARNIE WAS T
   <p>
     CONTACT
     <br>
-    matilda.bergstrom@student.tabyenskilda.se
+    matilda@example.com
     <br>
     <a href="#pagetop"> Return to top </a>
   </p>
 </footer>
 
 <!-- FOOTER -->
+
+<audio id="mySong" loop>
+  <source src="audio/pathofwind.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      if(mySong.paused){
+         mySong.play();
+         icon.src = "img/quavercross.png"
+    }else{
+      mySong.pause();
+      icon.src = "img/quaver.png"
+    }
+  }
+
+</script>
+
+<script src="js/startrail2.js"></script>
 
 </body>
 

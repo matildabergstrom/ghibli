@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <!-- NAV + MUSIC -->
+  <!-- NAV -->
 
   <div id="pagetop"></div>
 
@@ -29,32 +29,9 @@
     <a href="about.html" class="navlink">About</a>
   </nav>
 
+    <!-- NAV END -->
 
-
-
-  <audio id="mySong" loop>
-    <source src="audio/pathofwind.mp3" type="audio/mp3">
-    </audio>
-
-    <script>
-
-    var mySong = document.getElementById("mySong");
-    var icon = document.getElementById("icon"); // Musik-ikonen på sidan
-
-    icon.onclick = function(){
-      if(mySong.paused){ // Om man klickar och den är pausad, sätts musiken på
-        mySong.play();
-        icon.src = "img/quavercross.png"
-      }else{ // Om man klickar och den spelas, sätts musiken på
-        mySong.pause();
-        icon.src = "img/quaver.png"
-      }
-    }
-    </script>
-
-    <script src="js/startrail2.js"></script>     <!-- Trail på musen -->
-
-    <!-- NAV + MUSIC END -->
+    <h1 id="hiddenheader">Studio Ghibli</h1>
 
     <img id="ghiblilogo" alt="Studio Ghibli Logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png">
 
@@ -62,10 +39,10 @@
     <div class="container">
 
       <!--IMAGES IN MOVIE PREVIEW-->
-      <div class="spiritedimage"><img class="movieimage" alt="Spirited Away" src="img/spiritedaway.png"></div>
-      <div class="howlsimage"><img class="movieimage" alt="Howl's Moving Castle" src="https://m.media-amazon.com/images/M/MV5BMTU1NTE5NjQ0OF5BMl5BanBnXkFtZTcwMzk1NzEyNw@@._V1_.jpg"></div>
-      <div class="totoroimage"><img class="movieimage" alt="My Neighbor Totoro" src="https://dazedimg-dazedgroup.netdna-ssl.com/1920/azure/dazed-prod/1180/1/1181603.jpg"></div>
-      <div class="kikiimage"><img class="movieimage" alt="Kiki's Delivery Service" src="https://lwlies.com/wp-content/uploads/2019/07/kikis-delivery-service-1108x0-c-default.jpg"></div>
+      <div class="spiritedimage"><img class="movieimage" alt="Spirited Away" src="img/spiritedawaypreview.jpg"></div>
+      <div class="howlsimage"><img class="movieimage" alt="Howl's Moving Castle" src="img/howlsmovingcastlepreview.jpg"></div>
+      <div class="totoroimage"><img class="movieimage" alt="My Neighbor Totoro" src="img/totoropreview.jpg"></div>
+      <div class="kikiimage"><img class="movieimage" alt="Kiki's Delivery Service" src="img/kikisdeliveryservicepreview.jpg"></div>
 
       <!--TEXT IN MOVIE PREVIEW-->
       <div class="spiritedtext">
@@ -108,13 +85,35 @@
       <p>
         CONTACT
         <br>
-        matilda.bergstrom@student.tabyenskilda.se
+        matilda@example.com
         <br>
         <a href="#pagetop"> Return to top </a>
       </p>
     </footer>
 
     <!-- FOOTER -->
+
+    <audio id="mySong" loop>
+      <source src="audio/pathofwind.mp3" type="audio/mp3">
+      </audio>
+
+      <script>
+
+      var mySong = document.getElementById("mySong");
+      var icon = document.getElementById("icon"); // Musik-ikonen på sidan
+
+      icon.onclick = function(){
+        if(mySong.paused){ // Om man klickar och den är pausad, sätts musiken på
+          mySong.play();
+          icon.src = "img/quavercross.png"
+        }else{ // Om man klickar och den spelas, sätts musiken på
+          mySong.pause();
+          icon.src = "img/quaver.png"
+        }
+      }
+      </script>
+
+      <script src="js/startrail2.js"></script>     <!-- Trail på musen -->
 
   </body>
 

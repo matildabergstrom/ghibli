@@ -149,3 +149,8 @@ p {
   margin-right: auto;
   display: block;
 }
+
+#hiddenheader{
+  opacity: 0;
+  position: absolute;
+}
